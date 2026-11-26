@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "ultraopt",
+  "version": "${version}",
+  "name": "Zenith Visuals",
+  "description": "Визуал мира: динамический остров, виджеты, эффекты экрана, темы и меню настроек. Плюс оптимизация существ, частиц и тиков.",
+  "authors": ["Yulia"],
+  "license": "MIT",
+  "icon": "assets/ultraopt/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.ultraopt.UltraOptClient"]
+  },
+  "mixins": [
+    { "config": "ultraopt.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
